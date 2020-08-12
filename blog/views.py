@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
 
 from .models import Post
 from .forms import PostForm
@@ -8,21 +9,16 @@ from .forms import PostForm
 
 
 def post_list(request):
-    '''
-    Method to display a list of posts
-    '''
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 
 def post_detail(request, pk):
-    '''
-    Method to display a specific post
-    '''
-    post = get_object_or_404(Post, pk=pk)  # Returns a 404 if the object is not found
+    post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
+@login_required
 def post_new(request):
     '''
     Method to add a new post.
@@ -53,14 +49,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 
+@login_required
 def post_edit(request, pk):
-    '''
-    Method to edit a post. Approach is similar to the above.
-    '''
-
-    # Get the post in question
     post = get_object_or_404(Post, pk=pk)
-
     # When saving the edited post to the database
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
@@ -69,25 +60,26 @@ def post_edit(request, pk):
             post.author = request.user
             post.save()
             return redirect('post_detail', pk=post.pk)
-
     # When showing the post to edit
     else:
         form = PostForm(instance=post)
-
     return render(request, 'blog/post_edit.html', {'form': form})
 
 
+@login_required
 def post_draft_list(request):
     posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
     return render(request, 'blog/post_draft_list.html', {'posts': posts})
 
 
+@login_required
 def post_publish(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.publish()
     return redirect('post_detail', pk=pk)
 
 
+@login_required
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
