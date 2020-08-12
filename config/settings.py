@@ -126,3 +126,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'blog/static'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+LOGIN_REDIRECT_URL = '/'

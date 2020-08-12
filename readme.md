@@ -10,6 +10,11 @@ A blog built following the [Django Girls tutorial](https://tutorial.djangogirls.
 
 Uses ...</br>
 
+have a blog where you
+
+need a username and password to log in,
+need to be logged in to add, edit, publish or delete posts,
+and can log out again.
 
 
 ### Built using:
