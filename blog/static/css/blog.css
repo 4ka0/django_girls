@@ -7,12 +7,14 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 8px;
+    background-color: rgb(220, 235, 245);
 }
 
 .page-header {
     background-color: skyblue;
-    margin: 0 20px 20px 0;
+    margin: 10px 20px 20px 10px;
     padding: 20px 20px 20px 40px;
+    text-align: center;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -22,7 +24,14 @@ body {
 }
 
 .content {
-    margin-left: 40px;
+    margin-left: 20;
+}
+
+.user-info {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -49,7 +58,10 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    padding: 20px 20px 4px 20px;
+    border-radius: 20px;
 }
 
 .post h2 a, .post h2 a:visited {

@@ -9,7 +9,7 @@
                 <p>Published: {{ post.published_date }}</p>
             </div>
             <p>{{ post.text|truncatechars:200 }}</p>
-            <p>Comments: {{ post.approved_comments.count }}</p>
+            <p class="text-muted">Comments: {{ post.approved_comments.count }}</p>
         </div>
 
     {% endfor %}

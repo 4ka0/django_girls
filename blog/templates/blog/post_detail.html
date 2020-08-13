@@ -19,11 +19,11 @@
 
         {% if user.is_authenticated %}
 
-            <a class="btn btn-outline-primary mt-3 mr-4" href="{% url 'post_edit' pk=post.pk %}">Edit post</a>
-            <a class="btn btn-outline-danger mt-3 mr-4" href="{% url 'post_remove' pk=post.pk %}">Delete post</a>
+            <a class="btn btn-outline-primary mt-1 mr-4 mb-3" href="{% url 'post_edit' pk=post.pk %}">Edit post</a>
+            <a class="btn btn-outline-danger mt-1 mr-4 mb-3" href="{% url 'post_remove' pk=post.pk %}">Delete post</a>
 
             {% if not post.published_date %}
-                <a class="btn btn-outline-success mt-3 mr-4" href="{% url 'post_publish' pk=post.pk %}">Publish post</a>
+                <a class="btn btn-outline-success mt-1 mr-4 mb-3" href="{% url 'post_publish' pk=post.pk %}">Publish post</a>
             {% endif %}
 
         {% endif %}
