@@ -2,14 +2,16 @@
 
 {% block content %}
 
-    <h1>Draft Posts</h1><br />
+    <div class="post pb-3 text-center">
+        <h1>Draft Posts</h1>
+    </div>
 
     {% for post in posts %}
 
         <div class="post">
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p class="date">Created: {{ post.created_date|date:'d-m-Y' }}</p>
-            <p>{{ post.text|truncatechars:200 }}</p>
+            <p>{{ post.text|truncatechars:250 }}</p>
         </div>
 
     {% endfor %}

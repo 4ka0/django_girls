@@ -7,14 +7,22 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 8px;
-    background-color: rgb(220, 235, 245);
+    background-color: #b4dfe5;
+}
+
+.info-panel {
+    background-color: whitesmoke;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .page-header {
-    background-color: skyblue;
-    margin: 10px 20px 20px 10px;
+    background-color: #f4976c;
+    margin: 20px 40px 40px 20px;
     padding: 20px 20px 20px 40px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -23,15 +31,12 @@ body {
     text-decoration: none;
 }
 
-.content {
-    margin-left: 20;
+.page-header h1 a:hover {
+    color: #303c6c;
 }
 
-.user-info {
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
+.content {
+    margin-left: 20;
 }
 
 h1, h2, h3, h4 {
@@ -59,15 +64,27 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 20px;
+    margin-left: 10px;
     background-color: whitesmoke;
     padding: 20px 20px 4px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
 
-.comment {
-    margin: 20px 0px 20px 20px;
+.comment-block {
+    margin-bottom: 16px;
+    background-color: #fbe8a6;
+    padding: 20px 20px 4px 20px;
+    border-radius: 10px;
+}
+
+.individual-comment {
+    background-color: whitesmoke;
+    padding: 16px 20px 1px 20px;
+    margin-bottom: 20px;
+    color: #828282;
+    border-radius: 10px;
 }
