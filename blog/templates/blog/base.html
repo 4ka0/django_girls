@@ -21,6 +21,8 @@
             <div class="row">
 
                 <div class="col-2">
+
+                    <!-- User info panel -->
                     <div class="info-panel">
                         {% if user.is_authenticated %}
                             <p>Hello {{ user.username }}</p>
@@ -35,6 +37,14 @@
                             <a href="{% url 'login' %}">Log in</a>
                         {% endif %}
                     </div>
+
+                    <!-- Guest user info panel -->
+                    <div class="info-panel mt-3 text-muted">
+                            To log in as a guest:<br /><br />
+                            Username: <strong>Guest</strong><br /><br />
+                            Password: <strong>fish1234</strong>
+                    </div>
+
                 </div>
 
                 <div class="col-8">
