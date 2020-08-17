@@ -3,6 +3,7 @@
 __pycache__
 .venv/
 .env
+.ini
 .DS_Store
 db.sqlite3
 /static
