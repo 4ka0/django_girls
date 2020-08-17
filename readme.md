@@ -37,7 +37,7 @@ Includes separation of sensitive information from the codebase through the use o
 * Bootstrap 4
 * Visual Studio Code 1.48.0
 * macOS 10.14.6
-* virtualenv
+* Pipenv
 * Heroku
 * Git/GitHub
 
