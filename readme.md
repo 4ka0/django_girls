@@ -43,8 +43,8 @@ Includes separation of sensitive information from the codebase through the use o
 
 ### Screenshots:
 
-List view
+List view:
 ![alt text](readme_screenshot_1.png "Blog list screenshot")</br>
 
-Detail view
+Detail view:
 ![alt text](readme_screenshot_2.png "Blog detail screenshot")
