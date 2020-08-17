@@ -8,9 +8,9 @@ A blog built following the [Django Girls tutorial](https://tutorial.djangogirls.
 
 ### Features
 
-Uses a custom Post model including fields for an author which acts as a foreign key allowing a many-to-one
-relationship with the AUTH_USER_MODEL, a post title, post text, a created date, and also a published date
-which enables posts to be classified as either draft posts or published posts.</br>
+Uses a custom Post model including fields for an author (which acts as a foreign key allowing a many-to-one
+relationship with the AUTH_USER_MODEL), a post title, post text, a created date, and also a published date
+(which enables posts to be classified as either draft posts or published posts).</br>
 
 Uses more method-based views as opposed to generic class-based views as used in previous projects. Actually,
 getting some experience using method-based views was the main reason for doing this tutorial. This gave me the
