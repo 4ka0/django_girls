@@ -13,8 +13,8 @@ relationship with the AUTH_USER_MODEL), a post title, post text, a created date,
 (which enables posts to be classified as either draft posts or published posts).</br>
 
 Uses more method-based views as opposed to generic class-based views as used in previous projects. Actually,
-getting some experience using method-based views was the main reason for doing this tutorial. This gave me the
-opportunity to have a closer look at how QuerySets work, in particular.<br/>
+getting some experience using method-based views was the main reason for doing this tutorial. In particular, 
+this gave me the opportunity to have a closer look at how QuerySets work.<br/>
 
 Uses forms for adding and editing blog posts, particularly ModelForm.<br/>
 
@@ -24,7 +24,7 @@ editing, publishing, and deleting posts.<br/>
 Extends on previous projects by making it possible for users to enter comments from the front end. Also
 included functionality enabling the author of a blog post to approve or delete comments made by other readers.<br/>
 
-Includes separation of sensitive information from the codebase through the use of python-decouple.
+Uses python-decouple to separate sensitive information from the codebase.
 
 ### Built using:
 
