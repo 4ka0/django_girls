@@ -4,7 +4,7 @@
 
 A blog built following the [Django Girls tutorial](https://tutorial.djangogirls.org/en/).</br>
 
-[Live demo](https://jjl-djangogirlsblog.herokuapp.com) (deployed on Heroku).
+[Live demo](https://jjl-djangogirlsblog.herokuapp.com)
 
 ### Features
 
