@@ -4,8 +4,6 @@
 
 A blog built following the [Django Girls tutorial](https://tutorial.djangogirls.org/en/).</br>
 
-[Live demo](https://jjl-djangogirlsblog.herokuapp.com)
-
 ### Features
 
 Uses a custom Post model including fields for an author (which acts as a foreign key allowing a many-to-one
